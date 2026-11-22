@@ -1,0 +1,9 @@
+# Database credentials
+db.properties
+
+# Java compiled files
+bin/
+*.class
+
+# IDE
+.vscode/

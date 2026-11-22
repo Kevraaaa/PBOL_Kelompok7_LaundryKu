@@ -1,33 +1,18 @@
-# LaundryKu 🧺
+## Getting Started
 
-**LaundryKu** adalah aplikasi sistem manajemen laundry berbasis desktop yang dibuat menggunakan Java Swing dan MySQL/PostgreSQL. Aplikasi ini bertujuan untuk mempermudah pengelolaan data pelanggan, layanan, transaksi, pembayaran, dan laporan laundry.
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## 🛠️ Teknologi
-- Java
-- Java Swing
-- MySQL / PostgreSQL
-- JDBC
-- Git & GitHub
+## Folder Structure
 
-## ✨ Fitur Utama
-- Login pengguna
-- Dashboard
-- Manajemen data pelanggan
-- Manajemen jenis layanan
-- Transaksi laundry
-- Pembayaran
-- Laporan dan riwayat transaksi
+The workspace contains two folders by default, where:
 
-## 👥 Anggota Kelompok
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
 
-| No. | Nama | Peran |
-|---|---|---|
-| 1 | M Kevin Ramadhan | Project Manager & Frontend Developer |
-| 2 | Hadziq Naufal S | Database Engineer & Backend Developer |
-| 3 | Chris Martin | Frontend Developer & UI/UX Designer |
-| 4 | Naufal Awan | Quality Assurance & Backend Developer |
+Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-## 📚 Mata Kuliah
-Praktikum Pemrograman Berorientasi Objek Lanjutan (PBOL)
+> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-**LaundryKu – Manage Your Laundry, Easier and Smarter! 🧺**
+## Dependency Management
+
+The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
