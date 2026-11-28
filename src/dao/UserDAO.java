@@ -1,17 +1,30 @@
 package dao;
 
 import config.DatabaseConnection;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import model.User;
 
 public class UserDAO {
+    private static final Logger LOGGER = Logger.getLogger(UserDAO.class.getName());
 
     public User login(String username, String password) {
+        try {
+            return loginOrThrow(username, password);
+        } catch (SQLException | IOException exception) {
+            LOGGER.log(Level.SEVERE, "Error saat login.", exception);
+            return null;
+        }
+    }
+
+    public User loginOrThrow(String username, String password) throws SQLException, IOException {
         String sql = "SELECT id_user, nama, username, role " +
                      "FROM users " +
                      "WHERE username = ? AND password = SHA2(?, 256) " +
@@ -33,8 +46,6 @@ public class UserDAO {
                     return user;
                 }
             }
-        } catch (Exception e) {
-            System.out.println("Error saat login: " + e.getMessage());
         }
 
         return null;
